@@ -25,7 +25,6 @@
       android:layout_alignParentRight="true"
       android:layout_alignTop="@+id/dive_point_image"
       android:layout_marginRight="5dip"
-      android:textSize="10dip"
       android:textColor="#e002b5"
       />
   
@@ -37,7 +36,6 @@
       android:layout_below="@+id/dive_point_num"
       android:layout_toRightOf="@+id/dive_point_image"
       android:textColor="#09c697"
-      android:textSize="15dip"
       android:textStyle="bold"
       />
   
@@ -48,7 +46,6 @@
       android:layout_height="wrap_content"
       android:layout_below="@+id/dive_point_name"
       android:textColor="#98dc1a"
-      android:textSize="10dip"
       android:layout_marginTop="1dip"
       android:layout_toRightOf="@+id/dive_point_image"
       />

@@ -9,7 +9,7 @@
     >
 
   <Gallery
-      android:id="@+id/gallery"
+      android:id="@+id/formation_gallery"
       android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       />
@@ -31,7 +31,7 @@
         android:layout_weight="1"
         >
       
-      <ImageView
+      <android.support.v4.view.ViewPager
           android:id="@+id/formation_view"
           android:layout_width="fill_parent"
           android:layout_height="wrap_content"
@@ -43,7 +43,6 @@
           android:gravity="center"
           android:textColor="#09c697"
           android:textStyle="bold"
-          android:textSize="15dip"
           android:layout_width="fill_parent"
           android:layout_height="wrap_content"
           />
@@ -102,7 +101,6 @@
           android:id="@+id/dive_num_points_view"
           android:textColor="#e002b5"
           android:textStyle="bold"
-          android:textSize="12dip"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           />

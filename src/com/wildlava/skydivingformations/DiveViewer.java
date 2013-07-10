@@ -41,6 +41,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.widget.TextView;
 import android.util.DisplayMetrics;
+import android.util.TypedValue;
 //import android.widget.EditText;
 //import android.widget.Button;
 //import android.view.View;
@@ -58,6 +59,7 @@ import java.io.BufferedReader;
 
 public class DiveViewer extends Activity
 {
+   float textScaleFactor;
    int diveImageSize;
    int diveNumPoints;
    String[] diveFormationIds;
@@ -76,6 +78,7 @@ public class DiveViewer extends Activity
       super.onCreate(savedInstanceState);
 
       Intent intent = getIntent();
+      textScaleFactor = intent.getFloatExtra(FormationBrowser.EXTRA_MESSAGE_TEXT_SCALE_FACTOR, (float) 0.0);
       diveImageSize = intent.getIntExtra(FormationBrowser.EXTRA_MESSAGE_IMAGE_SIZE, 0);
       diveNumPoints = intent.getIntExtra(FormationBrowser.EXTRA_MESSAGE_NUM_POINTS, 0);
       diveFormationIds = intent.getStringArrayExtra(FormationBrowser.EXTRA_MESSAGE_FORMATION_IDS);
@@ -87,6 +90,7 @@ public class DiveViewer extends Activity
       divePointsView = (ListView) findViewById(R.id.dive_points_view);
       //divePointsView.addFooterView(findViewById(R.id.dive_footer_layout));
       divePointsView.addFooterView(getLayoutInflater().inflate(R.layout.dive_footer, divePointsView, false));
+      ((TextView) findViewById(R.id.dive_view_notes)).setTextSize(TypedValue.COMPLEX_UNIT_PX, (int) (10.0 * textScaleFactor));
       poolViewButton = (Button) findViewById(R.id.pool_view_button);
       //poolViewButton = new Button(this);
       //divePointsView.addFooterView(poolViewButton);
@@ -242,9 +246,20 @@ public class DiveViewer extends Activity
          //Log.v("Debug", "DiveView: point num: " + v.findViewById(R.id.dive_point_num));
          //Log.v("Debug", "DiveView: point name: " + v.findViewById(R.id.dive_point_name));
          //Log.v("Debug", "DiveView: point id: " + v.findViewById(R.id.dive_point_id));
-         ((TextView) v.findViewById(R.id.dive_point_num)).setText("Point " + (position + 1));
-         ((TextView) v.findViewById(R.id.dive_point_name)).setText(diveFormationNames[position]);
-         ((TextView) v.findViewById(R.id.dive_point_id)).setText(diveFormationIds[position]);
+         TextView divePointNum = (TextView) v.findViewById(R.id.dive_point_num);
+	 divePointNum.setText("Point " + (position + 1));
+	 divePointNum.setTextSize(TypedValue.COMPLEX_UNIT_PX,
+				  (int) (10.0 * textScaleFactor));
+
+         TextView divePointName = (TextView) v.findViewById(R.id.dive_point_name);
+         divePointName.setText(diveFormationNames[position]);
+	 divePointName.setTextSize(TypedValue.COMPLEX_UNIT_PX,
+				   (int) (15.0 * textScaleFactor));
+
+         TextView divePointId = (TextView) v.findViewById(R.id.dive_point_id);
+         divePointId.setText(diveFormationIds[position]);
+	 divePointId.setTextSize(TypedValue.COMPLEX_UNIT_PX,
+				 (int) (10.0 * textScaleFactor));
 
          try
          {

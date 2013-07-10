@@ -10,11 +10,10 @@
     android:id="@+id/dive_footer_layout">
   
   <TextView
-      android:id="@+id/dive_point_name"
+      android:id="@+id/dive_view_notes"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginRight="5dip"
-      android:textSize="10dip"
       android:textColor="#e002b5"
       android:text="@string/dive_view_notes"
       />
