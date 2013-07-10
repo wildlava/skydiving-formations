@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Colors tried: purple/"#250658"-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#221045"
+    android:id="@+id/dive_footer_layout">
+  
+  <TextView
+      android:id="@+id/dive_point_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="5dip"
+      android:textSize="10dip"
+      android:textColor="#e002b5"
+      android:text="@string/dive_view_notes"
+      />
+  
+  <Button
+      android:id="@+id/pool_view_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/pool_view"
+      android:onClick="poolView"
+      />
+
+</LinearLayout>

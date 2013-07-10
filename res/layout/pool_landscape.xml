@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#221045"
+    android:id="@+id/pool_landscape_layout"
+    >
+
+  <Gallery
+      android:id="@+id/gallery"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      />
+
+  <LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android" 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:gravity="right"
+      android:orientation="horizontal"
+      android:layout_weight="1"
+      >
+    
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+      
+      <ImageView
+          android:id="@+id/formation_view"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          />
+      
+      <TextView
+          android:id="@+id/formation_name_view"
+          android:gravity="center"
+          android:textColor="#09c697"
+          android:textStyle="bold"
+          android:textSize="15dip"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+      
+      <Spinner
+          android:id="@+id/formation_size_spinner"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:prompt="@string/formation_size_prompt"
+          />
+      
+      <Button
+          android:id="@+id/clear_dive_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/clear_dive"
+          android:onClick="clearDive"
+          android:enabled="false"
+          />
+      
+      <Button
+          android:id="@+id/add_point_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/add_point"
+          android:onClick="addPoint"
+          />
+      
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        >
+      
+      <Button
+          android:id="@+id/dive_view_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/dive_view"
+          android:onClick="diveView"
+          />
+      
+      <TextView
+          android:id="@+id/dive_num_points_view"
+          android:textColor="#e002b5"
+          android:textStyle="bold"
+          android:textSize="12dip"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          />
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+* Make gallery-centered image after fling stops) become selected image
+* Add save/load dive
+* Why gallery spaced on large screen?  Why does center frame not look "done"
+  initially or on orientation change?
+* Should we preserve state when back button to home is used
+  (i.e. use onPause()/onResume())?
+* Do better job regarding formation image size, scaling, layout, etc.
+
+Non-critical:
+
+* Check access of methods (e.g. onCreate() - public/protected?)
+  - callbacks (referenced from, e.g., buttons) need to be public

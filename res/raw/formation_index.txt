@@ -1,0 +1,1085 @@
+02-001 Star
+02-002 Compressed Accordion
+02-003 Caterpillar
+02-004 Side Body
+02-005 Open Accordion
+02-006 Stairstep
+02-007 Line
+02-008 Right Angle
+02-009 Leg Lock
+03-001 Star
+03-002 Compressed Accordion
+03-003 Caterpillar
+03-004 Murphy
+03-005 Bundy
+03-006 Hammer
+03-007 Donut
+03-008 Stairstep
+03-009 Opposed Stairstep
+03-010 Line
+03-011 AFF
+03-012 Tee
+03-013 03-013
+03-014 03-014
+03-015 03-015
+03-016 Reverse Wedge
+03-017 Open Accordion
+03-018 Wedge
+03-019 03-019
+03-020 03-020
+03-021 03-021
+03-022 Sidebody
+03-023 03-023
+03-024 03-024
+03-025 03-025
+03-026 03-026
+03-027 03-027
+03-028 03-028
+03-029 One-Handed Cat
+03-030 Helix
+03-031 03-031
+03-032 03-032
+03-033 03-033
+04-001 Star
+04-002 Bipole
+04-003 Opal
+04-004 Facing Diamond
+04-005 Stairstep Diamond
+04-006 Zipper
+04-007 Donut
+04-008 Monopod
+04-009 Unipod
+04-010 Caterpillar
+04-011 Hammer
+04-012 Snowflake
+04-013 Cataccord
+04-014 Marquis
+04-015 Compressed Accordion
+04-016 Bundy
+04-017 Turf
+04-018 Adder
+04-019 Side-Flake Donut
+04-020 Sidebody Donut
+04-021 Side-Flake Opal
+04-022 Canadian Tee
+04-023 Chinese Tee
+04-024 Danish Tee
+04-025 Box
+04-026 Black Hole
+04-027 Side Body
+04-028 Bunyip
+04-029 Meeker
+04-030 Spinner
+04-031 Open Stairstep
+04-032 Opposed Stairstep
+04-033 Compressed Stairstep
+04-034 Phalanx
+04-035 Open Accordion
+04-036 Crazy
+04-037 Mono Flake
+04-038 Zircon
+04-039 Helix
+04-040 Arrowhead
+04-041 Crossbox
+04-042 Surf
+04-043 Offset
+04-044 Molar
+04-045 Crank
+04-046 Satellite
+04-047 Murphy
+04-048 Horseshoe
+04-049 Ritz
+04-050 Murphy Flake
+04-051 Zoo
+04-052 Interlock
+04-053 Stardian
+04-054 Cat-Interlock
+04-055 Photon
+04-056 Zig Zag
+04-057 Yuan
+04-058 Tee
+04-059 Ice Pick
+04-060 Interlock Flake
+04-061 Widget
+04-062 Wudget
+04-063 Bow
+04-064 Hook
+04-065 Viper
+04-066 Piver
+04-067 Handshake
+04-068 Mister Tee
+04-069 Why
+04-070 Mutant
+04-071 Monoflake
+04-072 Ell
+04-073 Double Accordion
+04-074 Side-Flaked Star
+04-075 Larry
+04-076 Curly
+04-077 Moe
+04-078 Groucho
+04-079 Chico
+04-080 Harpo
+04-081 Zeppo
+04-082 04-082
+05-001 Star
+05-002 05-002
+05-003 05-003
+05-004 Open Accordion
+05-005 Phalanx
+05-006 Caterpiller
+05-007 Compressed Accordion
+05-008 Bi-Donuts
+05-009 05-009
+05-010 AFF Flake
+05-011 Spider
+05-012 05-012
+05-013 Camshaft
+05-014 Cataccord
+05-015 Canadian Tee Flake
+05-016 Helix
+05-017 Side-Flake Marquis
+05-018 Zipper With A Stinger
+05-019 Stairstep
+05-020 Side-Flake Cat
+05-021 Spear Point
+05-022 05-022
+05-023 Neck Tie
+05-024 05-024
+05-025 Vee
+05-026 Side-Compressed Donut
+05-027 Accord Flake
+05-028 Mono Flake
+05-029 Unipod Flake
+05-030 Half Compass
+05-031 You
+05-032 05-032
+05-033 05-033
+05-034 Adder
+05-035 Sidebody
+05-036 Donut
+05-037 05-037
+05-038 05-038
+05-039 Bat
+05-040 05-040
+05-041 05-041
+05-042 Cat Pod
+05-043 05-043
+05-044 Comet
+05-045 Kaos
+06-001 Star
+06-002 In-Out
+06-003 In-In-Out
+06-004 Side-Compressed Diamond
+06-005 06-005
+06-006 Zipper
+06-007 Donut
+06-008 Opposed Stairstep
+06-009 Wedge
+06-010 Snowflake
+06-011 Caterpillar
+06-012 06-012
+06-013 Marquis Flake
+06-014 06-014
+06-015 06-015
+06-016 06-016
+06-017 Double Wedges
+06-018 Pod Flake
+06-019 Opposed Wedges
+06-020 Snow Flake Flake
+06-021 06-021
+06-022 Compressed Accordion
+06-023 Open Accordion
+06-024 Swedge
+06-025 Stairstep
+06-026 Helix
+06-027 Phalanx
+06-028 Compressed-Flake Donut
+06-029 06-029
+06-030 Tumbleweed
+06-031 Crank
+06-032 Wisdom Tooth
+06-033 Big Zircon
+06-034 Cat Accordion
+06-035 06-035
+06-036 06-036
+06-037 06-037
+06-038 Donut Bipole
+06-039 Opal Opal
+06-040 06-040
+06-041 Sidebody
+06-042 Side-Flake Marquis
+06-043 06-043
+06-044 06-044
+06-045 06-045
+06-046 06-046
+06-047 06-047
+06-048 Cat Donut
+06-049 06-049
+06-050 Yuan Yuan
+06-051 06-051
+06-052 Sidebody Donut
+06-053 06-053
+06-054 06-054
+06-055 Compressed-Flake Meeker
+06-056 Meeker Flake
+06-057 Opal Meeker
+06-058 Cataccord
+06-059 Zig-Zag Flake
+06-060 06-060
+06-061 06-061
+06-062 06-062
+06-063 06-063
+06-064 Bold Accordion
+06-065 Molar Flake
+06-066 06-066
+06-067 Docked Hammers
+06-068 Side-Flaked Star
+06-069 Side-Flaked Bipole
+06-070 Long Diamond
+07-001 Star
+07-002 07-002
+07-003 Donut
+07-004 Compressed Accordion
+07-005 Caterpillar
+07-006 07-006
+07-007 07-007
+07-008 Open Accordion
+07-009 07-009
+07-010 07-010
+07-011 07-011
+07-012 07-012
+07-013 07-013
+07-014 Cataccord
+07-015 07-015
+07-016 Helix
+07-017 07-017 
+07-018 07-018
+07-019 Stairstep
+07-020 07-020
+07-021 07-021
+07-022 07-022
+07-023 Donut Diamonds
+07-024 07-024
+07-025 Vee
+07-026 07-026
+07-027 Cataccord
+07-028 Cat Accordion
+07-029 Snake Head
+07-030 Sidebody
+07-031 Open Arrowhead
+07-032 07-032
+07-033 07-033
+07-034 07-034
+07-035 07-035
+07-036 07-036
+07-037 Comet
+07-038 07-038
+07-039 07-039
+07-040 07-040
+07-041 07-041
+07-042 07-042
+07-043 07-043
+07-044 07-044
+07-045 Lobster Tail
+08-001 Star
+08-002 In-Out
+08-003 Donut
+08-004 Compressed Accordion
+08-005 Caterpillar
+08-006 08-006
+08-007 Double Murphies
+08-008 Open Accordion
+08-009 Compressed Stairstep Diamonds
+08-010 Compressed Facing Diamonds
+08-011 Compressed Donuts
+08-012 Double Diamonds
+08-013 Zipper
+08-014 Opposed Zippers
+08-015 Cataccord
+08-016 Helix
+08-017 Opposed Helix
+08-018 Offset Diamonds
+08-019 Stairstep
+08-020 Opposed Sidebody
+08-021 Double Stairsteps
+08-022 Norwegian Donut
+08-023 Compressed-Flake Donut
+08-024 Facing Diamond Flake
+08-025 Double Murphy Diamonds
+08-026 08-026
+08-027 Long Marquis
+08-028 Cat Accordion
+08-029 Open Facing Diamond
+08-030 Sidebody
+08-031 Easy Crank
+08-032 Crank
+08-033 08-033
+08-034 08-034
+08-035 08-035
+08-036 Compressed Monopods
+08-037 Snowflake
+08-038 Bipole Flake
+08-039 Easy Bipole Flake
+08-040 08-040
+08-041 Thunderbird
+08-042 08-042
+08-043 Opposed Stairsteps
+08-044 08-044
+08-045 Springbok
+08-046 Butterfly
+08-047 08-047
+08-048 Hour Glass
+08-049 Bear Trap
+08-050 Trapped Bear
+08-051 Free Bear
+08-052 08-052
+08-053 Donut Flake
+08-054 Snow Flake Flake Flake
+08-055 In In In Out
+08-056 Emerald
+08-057 Opposed Open Diamond
+08-058 Hope Diamond
+08-059 08-059
+08-060 08-060
+08-061 08-061
+08-062 Double Donuts
+08-063 Double Stardians
+08-064 Double Opals
+08-065 Double Murphies
+08-066 Gyro
+08-067 Iroquois
+08-068 Stairstep Donut
+08-069 Diamond Flake
+08-070 Opposed Diamond Cluster Flake
+08-071 08-071
+08-072 Diamond Flake
+08-073 Old Bone
+08-074 New Bone
+08-075 Donut Bone
+08-076 Double Meekers
+08-077 Meeker Murphies
+08-078 Meeker Bipoles
+08-079 Shell
+08-080 Docked Diamonds
+08-081 08-081
+08-082 Eye
+08-083 08-083
+08-084 08-084
+08-085 Optic
+08-086 08-086
+08-087 08-087
+08-088 Zipper Flake
+08-089 Norwegian Box
+08-090 Cat Diamond
+08-091 Long Diamond
+08-092 Opposed Long Diamond
+08-093 Opposed Cat Diamond
+08-094 Rubick Diamond
+08-095 Double Bipoles
+08-096 Phalanx
+08-097 Compass
+08-098 Inside Stereo Bipole
+08-099 Compressed Zippers
+08-100 08-100
+08-101 08-101
+08-102 Side-Flake Donut
+08-103 Donut Handshake
+08-104 Frisbee
+08-105 Buzzard
+08-106 Opposed Double Spiders
+08-107 Double Spiders
+08-108 Comet
+08-109 Chevron
+08-110 Hurricane
+08-111 Double Bubble
+08-112 Diamond Flake
+08-113 Arrowhead
+08-114 Donut Cross
+08-115 Stereo Bipole
+08-116 Taj
+08-117 Mahal
+08-118 Opposed Stairsteps
+08-119 Double Satellite
+08-120 Amoeba
+08-121 Lego
+08-122 Bipole Interlock
+08-123 Side-Body Donut
+08-124 Triple Opals
+08-125 08-125
+08-126 08-126
+08-127 08-127
+08-128 Facing Diamond Cluster Flake
+08-129 08-129
+08-130 Wagga
+08-131 Swiss Bear
+08-132 Easy Hope Diamond
+08-133 Outside-Hand Donut
+08-134 Outside-Leg Donut
+08-135 Bold Accordion
+08-136 Donut Sidebodies
+08-137 Double Wudgets
+08-138 Offset Cross
+08-139 08-139
+08-140 08-140
+08-141 08-141
+08-142 Hopeless Diamond
+08-143 08-143
+08-144 Double Photons
+08-145 Monopod Donut
+08-146 08-146
+08-147 08-147
+09-001 Star
+09-002 Donut
+09-003 Cluster
+09-004 Tri-Opals
+09-005 09-005
+09-006 Tri-Donuts
+09-007 09-007
+09-008 Open Accordion
+09-009 09-009
+09-010 Star Flake Flake
+09-011 Bipole Flake Flake
+09-012 Caterpillar
+09-013 09-013
+09-014 Facing Diamond
+09-015 Opposed Diamond
+09-016 09-016
+09-017 09-017
+09-018 09-018
+09-019 Norwegian Donut
+09-020 Donut Compress Compress
+09-021 Accordion-Flake Donut
+09-022 Compress Accordion
+09-023 09-023
+09-024 Tri Wedges
+09-025 09-025
+09-026 09-026
+09-027 Compressed Donuts
+09-028 09-028
+09-029 00-029
+09-030 09-030
+09-031 Cat Accordion
+09-032 09-032
+09-033 Door Mat
+09-034 Helix
+09-035 09-035
+09-036 09-036
+09-037 Flat Tire
+09-038 09-038
+09-039 Super Sidebody
+09-040 Pod Flake
+09-041 Triple Wedges
+09-042 Triple Stairsteps
+09-043 Old Bone
+09-044 New Bone
+09-045 Propeller
+09-046 09-046
+09-047 09-047
+09-048 09-048
+09-049 09-049
+09-050 09-050
+09-051 09-051
+09-052 Heron
+09-053 09-053
+09-054 09-054
+09-055 Compressed Accordion Star
+09-056 09-056
+09-057 Open Diamond With Stinger
+09-058 09-058
+09-059 Phalanx
+09-060 09-060
+09-061 09-061
+09-062 09-062
+09-063 09-063
+09-064 Double Bubble
+09-065 Amputee
+09-066 09-066
+09-067 Another Jewel
+09-068 Spider Jewel
+09-069 Opal Jewel
+09-070 Jewel
+09-071 Sidebody Star
+09-072 Sidebody Donut
+09-073 09-073
+09-074 09-074
+09-075 Pod Accordion
+09-076 09-076
+09-077 09-077
+09-078 09-078
+09-079 Broken-Hammer Donut
+09-080 Hammer Donut
+09-081 09-081
+09-082 09-082
+09-083 09-083
+10-001 Star
+10-002 In-Out
+10-003 Sunflake
+10-004 Donut
+10-005 Stairstep Donut
+10-006 Snowflake
+10-007 Side-Flake Donut
+10-008 Open Accordion
+10-009 Caterpillar
+10-010 Opposed Wedge
+10-011 Facing Wedge
+10-012 Reverse Wedge
+10-013 Rubick Cross
+10-014 Opposed Tri-Diamonds
+10-015 Facing Tri-Diamonds
+10-016 Crank
+10-017 Bridge
+10-018 Phalanx
+10-019 Double Donuts
+10-020 Tri-Donuts
+10-021 10-021
+10-022 10-022
+10-023 10-023
+10-024 Out-Facing Double Diamonds
+10-025 10-025
+10-026 Buzzard
+10-027 In-Facing Double Diamonds
+10-028 Opposed Stairsteps
+10-029 Facing Stairsteps
+10-030 Compress-Flake Donut
+10-031 Sidebody
+10-032 Compressed Accordion
+10-033 Zipper
+10-034 Opposed Helix
+10-035 Helix
+10-036 Opal Zipper
+10-037 10-037
+10-038 10-038
+10-039 10-039
+10-040 10-040
+10-041 Double Murphies
+10-042 Accordion Flake
+10-043 Double Long Diamonds
+10-044 Cat Accordion
+10-045 Snowflake Flake Flake
+10-046 Opposed Long Diamonds
+10-047 Opposed Vees
+10-048 Tri-Diamonds
+10-049 Ex
+10-050 Fat Buzzard
+10-051 Old Bone
+10-052 10-052
+10-053 10-053
+10-054 Tumbleweed
+10-055 10-055
+10-056 10-056
+10-057 10-057
+10-058 10-058
+10-059 10-059
+10-060 Dragon
+10-061 Flaked Opposed Stairstep
+10-062 Beartrap Flake
+10-063 Rubick Ex
+10-064 Tim's Zircon
+10-065 Wright Flyer
+10-066 Stairstep Star
+10-067 Nova
+10-068 Hand Prop
+10-069 Cross
+11-001 Star
+11-002 Compressed Accordion
+11-003 11-003
+11-004 Double Bubble
+11-005 11-005
+11-006 Open Accordion
+11-007 11-007
+11-008 11-008
+11-009 11-009
+11-010 Hourglass
+11-011 11-011
+11-012 11-012
+11-013 11-013
+11-014 11-014
+11-015 11-015
+11-016 Triple Spiders
+11-017 11-017
+11-018 11-018
+11-019 11-019
+11-020 11-120
+11-021 Bone
+11-022 11-022
+11-023 11-023
+11-024 11-024
+12-001 Star
+12-002 In-Out
+12-003 Slot Flake
+12-004 Donut
+12-005 Slot-Flake Donut
+12-006 Snowflake
+12-007 Side-Flake Donut
+12-008 Stairstep Donut
+12-009 12-009
+12-010 Caterpillar
+12-011 Triple Stairsteps
+12-012 Snowflake Flake Flake
+12-013 Opposed Zippers
+12-014 Zipper
+12-015 12-015
+12-016 12-016
+12-017 Open Accordion
+12-018 Phalanx
+12-019 Quadruple Stairsteps
+12-020 Quadruple Helicies
+12-021 Zipper Flake
+12-022 Pod Flake
+12-023 12-023
+12-024 Propeller
+12-025 Snowflake Flake
+12-026 Bipole Flake Flake
+12-027 12-027
+12-028 12-028
+12-029 Donut-Docked Bipoles
+12-030 12-030
+12-031 Tri-Bipoles
+12-032 Bipole Vee
+12-033 12-033
+12-034 12-034
+12-035 12-035
+12-036 12-036
+12-037 12-037
+12-038 Double Murphies
+12-039 12-039
+12-040 Offset Long Diamonds
+12-041 Inline Long Diamonds
+12-042 Opposed Long Diamond
+12-043 12-043
+12-044 Triple Opposed Diamonds
+12-045 12-045
+12-046 12-046
+12-047 12-047
+12-048 Doily
+12-049 Triple Diamonds
+12-050 Triple Opals
+12-051 Facing Millipeded
+12-052 Milipede
+12-053 In-Out Flake
+12-054 12-054
+12-055 Opposed Crank
+12-056 Crank
+12-057 God's Eye
+12-058 12-058
+12-059 Compressed-Flake Donut
+12-060 Opal In-Out
+12-061 Bipole Jewel
+12-062 Donut Jewel
+12-063 Open Facing Diamond
+12-064 Hourglass
+12-065 Offset Wedges
+12-066 Inline Reverse Wedges
+12-067 Arrowhead
+12-068 Chevron
+12-069 12-069
+12-070 Norwegian Donut Flake
+12-071 12-071
+12-072 Rubick Swedge
+12-073 Easy In-Out Flake
+12-074 Double Tumbleweed
+12-075 Old Bone
+12-076 Opposed Phalanx Diamond
+12-077 Facing Phalanx Diamond
+12-078 Hopeless Flake
+12-079 12-079
+12-080 Inline Compressed Donuts
+12-081 Tri-Donut Sideflake
+12-082 Anihiga
+12-083 Opposed Helix
+12-084 Bear Trap
+12-085 Compressed Triple Meeker
+12-086 Triple Meeker Donut
+12-087 Triple Meeker Outside Donut
+12-088 Triple Facing Diamond Donut
+12-089 Cat Accordion
+12-090 Opposed Sidebody
+12-091 Sidebody
+12-092 12-092
+12-093 12-093
+12-094 12-094
+12-095 12-095
+12-096 Discus
+12-097 12-097
+12-098 12-098
+12-099 Haagendazs
+12-100 Inline Penta Opals
+12-101 Good Luck With This
+12-102 Side-By-Side Donuts
+12-103 Wagga
+12-104 Taj
+12-105 Mahal
+12-106 Bipoles & Donuts
+12-107 Norwegian Box
+12-108 Norwegian Donut
+12-109 Satellite
+12-110 Albatross
+12-111 Super Stereo Bipole
+12-112 Zig Nut
+12-113 Lego
+12-114 12-114
+12-115 No-Hope Diamond
+12-116 Diamond Flake Flake
+12-117 Wide Rubick
+12-118 Crank
+12-119 Wedge With Stinger
+12-120 Iroquois
+12-121 Zipper Flake Flake
+12-122 Medal
+12-123 Sidebody Donut Flake
+12-124 Sidebody Star
+12-125 Sidebody Donut
+12-126 Inline Triple Meekers
+12-127 Molar Donut
+12-128 Molar Sidebody Donut
+12-129 Molar Star
+12-130 Open Sidebody Diamond
+12-131 12-131
+12-132 12-132
+13-001 Star
+13-002 Donut
+13-003 Jewel Flake
+13-004 Arrowhead
+13-005 13-005
+13-006 Open Accordion
+13-007 Bone
+13-008 Double Bubble
+13-009 13-009
+13-010 13-010
+13-011 Quadra Donuts
+13-012 Quadra Opals
+13-013 13-013
+13-014 13-014
+13-015 13-015
+13-016 Sidebody Vee
+13-017 13-017
+13-018 Urn
+13-019 13-019
+13-020 13-020
+13-021 13-021
+13-022 13-022
+13-023 13-023
+13-024 Keyhole
+13-025 13-025
+13-026 13-026
+13-027 13-027
+14-001 Star
+14-002 Donut
+14-003 Snowflake
+14-004 Nested Diamonds
+14-005 Slot Flake
+14-006 14-006
+14-007 Side-Flake Donut
+14-008 Compress-Flake Donut
+14-009 Slot-Flake Donut
+14-010 14-010
+14-011 14-011
+14-012 14-012
+14-013 14-013
+14-014 14-014
+14-015 Four-Arm Weed Whacker
+14-016 14-016
+14-017 Dumb Bell
+14-018 Opposed Phalanxes
+14-019 14-019
+14-020 14-020
+14-021 14-021
+14-022 14-022
+14-023 Double Cat Diamonds
+14-024 Rubick Diamonds
+14-025 Rubick Double Diamonds
+14-026 Open Accordion
+14-027 Donut Jewel
+14-028 Bold Accordion
+14-029 14-029
+14-030 14-030
+14-031 14-031
+14-032 14-032
+14-033 14-033
+14-034 Double Norwegian Donuts
+14-035 Jack Stand
+14-036 14-036
+14-037 14-037
+14-038 14-038
+14-039 14-039
+14-040 Stairstep Donut
+14-041 14-041
+14-042 Hexa Opals
+14-043 Opposed Stairsteps
+14-044 Facing Stairsteps
+14-045 Zipper
+14-046 14-046
+14-047 14-047
+14-048 14-048
+14-049 14-049
+14-050 14-050
+14-051 14-051
+14-052 14-052
+14-053 Bipole Jewel
+15-001 Star
+15-002 Donut
+15-003 Facing Wedge
+15-004 Belted Diamond
+15-005 Swedge
+15-006 Facing Trapezoid
+15-007 Texas Star
+15-008 15-008
+15-009 Cluster Flake
+15-010 Pinwheel
+15-011 Snowflake Flake
+15-012 15-012
+15-013 Accordion-Flake Donut
+15-014 15-014
+15-015 Weed Whacker
+15-016 15-016
+15-017 Opposed Trapezoid
+15-018 Pod-Flake Donut
+15-019 15-019
+15-020 Snow Tire
+15-021 15-021
+15-022 15-022
+15-023 In-In-Out
+15-024 15-024
+15-025 15-025
+15-026 15-026
+15-027 15-027
+15-028 15-028
+15-029 Propeller
+15-030 Rotor
+15-031 15-031
+15-032 15-032
+15-033 15-033
+15-034 15-034
+15-035 Ninja
+15-036 15-036
+15-037 15-037
+15-038 Double U
+15-039 15-039
+15-040 15-040
+16-001 Star
+16-002 Slot Flake
+16-003 Snowflake
+16-004 Aich
+16-005 Zipper Flake
+16-006 16-006
+16-007 Snowflake Flake Flake
+16-008 Helix Flake
+16-009 Donut
+16-010 Compress-Flake Donut
+16-011 Slot-Flake Donut
+16-012 Side-Flake Donut
+16-013 Wagon Wheel
+16-014 Double Murphies
+16-015 Easy In-Out Flake
+16-016 In-Out Flake
+16-017 Tumbleweed
+16-018 16-018
+16-019 Disk
+16-020 Quadra Murphy
+16-021 Accordion-Flake Donut
+16-022 Monopod Flake
+16-023 Quadra Diamonds
+16-024 Easy Compass
+16-025 Facing Diamond
+16-026 Opposed Diamond
+16-027 Opposed Diamond
+16-028 Holy Rubick
+16-029 Compress-Flake Helix
+16-030 Side-Flake Helix
+16-031 Opposed Double Spiders
+16-032 16-032
+16-033 Double Facing Stairsteps
+16-034 Facing Stairsteps
+16-035 Opal Diamonds
+16-036 Compressed Facing Diamonds
+16-037 Donutized Diamonds
+16-038 Donutized Opals
+16-039 Cluster
+16-040 Bipole Cluster
+16-041 Quadra Compressed Accordions
+16-042 16-042
+16-043 Compressed Accordion Donut
+16-044 Accordion Flake
+16-045 Opposed Long Zippers
+16-046 Facing Long Zippers
+16-047 Opposed Zippers
+16-048 Facing Zipper
+16-049 Zipper Donut
+16-050 Outside-Hand Donut Flake
+16-051 Two-Arm Weed Whacker
+16-052 Four-Arm Weed Whacker
+16-053 16-053
+16-054 Facing Trapezoid
+16-055 Dive Pool
+16-056 In-Out Slot Flake
+16-057 16-057
+16-058 Open Accordion
+16-059 16-059
+16-060 In-Out
+16-061 Penta Opposed Diamonds
+16-062 Binary Star
+16-063 Bipole Jewel
+16-064 Donut Jewel
+16-065 Offset Arrowheads
+16-066 Box of Donuts
+16-067 Inline Quadra Donuts
+16-068 Penta Donuts
+16-069 16-069
+16-070 Opposed Stairsteps
+16-071 Outside-Leg Donut Handshake
+16-072 Claire Bare
+16-073 16-073
+16-074 16-074
+16-075 16-075
+16-076 16-076
+16-077 Hop
+16-078 Nairobi
+16-079 Zipper Stereo Bipole
+16-080 Sidebody Diamonds
+16-081 Hakuna
+16-082 Matata
+16-083 16-083
+16-084 Rose
+16-085 Jambo
+16-086 Bipolium
+16-087 Ruby
+16-088 God's Eye
+16-089 Sidebody Donut
+16-090 Sidebody Star
+16-091 Donutized Sidebodies
+16-092 Sidebody Stairstep Donut
+16-093 Molar Star
+16-094 Meeker Madness
+17-001 Star
+17-002 Horizontal Diamond Plate
+17-003 Opposed Diamond Plate
+17-004 Facing Diamond Plate
+17-005 Pod-Tipped Diamond
+17-006 Long Bipole Jewel
+17-007 Chainlink
+17-008 Long Donut Jewel
+17-009 Long Opal Jewel
+17-010 17-010
+17-011 Double Bubble
+17-012 Spider With Loops
+17-013 Pod-Tipped Jewel
+17-014 17-014
+17-015 Parallel Cats
+17-016 Encumbered Cat
+17-017 Jewel With Lines
+17-018 Double Diamonds With Loops
+18-001 Star
+18-002 Slot Flake
+18-003 Snowflake
+18-004 Pod Flake
+18-005 Snowflake Flake
+18-006 Cluster
+18-007 Helix Flake
+18-008 Side-Flake Donut
+18-009 Slot-Flake Donut
+18-010 Compress-Flake Donut
+18-011 Weed Whacker
+18-012 Accordion-Flake Donut
+18-013 18-013
+18-014 Weed Whacker
+18-015 Accordion-Flake Donut
+18-016 Triple Wedges
+18-017 18-017
+18-018 Rubick Diamond
+18-019 Loopy Star
+18-020 Loopy Bipole
+18-021 Opposed Stairsteps
+18-022 Zipper
+18-023 18-023
+18-024 Trellis
+18-025 18-025
+18-026 Triple Tumbleweeds
+18-027 Opposed Diamonds
+18-028 Opposed Arrowheads
+18-029 In-Out Cluster Flake
+18-030 18-030
+18-031 Spindle
+18-032 18-032
+18-033 18-033
+18-034 Nebula
+19-001 Star
+19-002 Wings
+19-003 Double Bubble
+19-004 19-004
+19-005 Hourglass
+19-006 Butterfly
+19-007 19-007
+19-008 19-008
+19-009 Slug
+19-010 19-010
+19-011 Opposed Arrowhead
+19-012 19-012
+19-013 19-013
+19-014 Spine
+19-015 Fly Eyes
+19-016 19-016
+20-001 Star
+20-002 In-Out
+20-003 Snowflake
+20-004 Slot Flake
+20-005 Wagon Wheel
+20-006 Pod Flake
+20-007 Four-Arm Weed Whacker
+20-008 Five-Arm Weed Whacker
+20-009 Donut-Bipole Belt
+20-010 Bipole-Donut Vee
+20-011 Starfish
+20-012 Accordion-Flake Donut
+20-013 Texas Star
+20-014 Bipole Donut Cross
+20-015 Facing Ex
+20-016 Opposed Ex
+20-017 Diamonds Are Forever
+20-018 Rubick Diamonds
+20-019 Podflake
+20-020 Opposed Wedges
+20-021 Hourglass
+20-022 Trapezoid
+20-023 Opposed Stairsteps
+20-024 Spearhead
+20-025 Dumb Bell
+20-026 Berke's Diamond
+20-027 Belted Diamond
+20-028 Easy Jewel
+20-029 Donut Diamond Flake
+20-030 Windmill
+20-031 Binary Star
+20-032 BJ's Progression
+20-033 Floater
+20-034 Penta Zipper
+20-035 Pinwheel
+20-036 Penta Diamonds
+20-037 Centipede
+20-038 Long Opposed Zipper
+20-039 Door Mat
+20-040 Cross
+20-041 Antenna
+20-042 Virus
+20-043 Poker Chip
+20-044 Pod-Flake Donut
+20-045 Capsule
+20-046 Roadkill
+20-047 Butterfly
+20-048 Double Xs
+20-049 Zipper Cross
+20-050 Compressed-Enhanced Jewel
+20-051 Triple Open Diamond
+20-052 Double Swedges
+20-053 Cat-Enhanced Jewel
+20-054 Double Star
+20-055 Room Dive
+20-056 Moth
+20-057 Falcon
+20-058 Sidebody Donut
+20-059 Sidebody Star
+20-060 Sidebody Diamond
+20-061 Sidebody Donut
+20-062 Meeker Donut
+20-063 In-Out Meeker Flake
+20-064 Meeker Star

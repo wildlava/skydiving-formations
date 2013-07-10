@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#221045"
+                android:padding="5dip"
+                android:id="@+id/dive_point_layout"
+                >
+
+  <!-- Formation Image -->
+  <ImageView
+      android:id="@+id/dive_point_image"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_marginRight="5dip"
+      />
+  
+  <!-- Point Number -->
+  <TextView
+      android:id="@+id/dive_point_num"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_alignTop="@+id/dive_point_image"
+      android:layout_marginRight="5dip"
+      android:textSize="10dip"
+      android:textColor="#e002b5"
+      />
+  
+  <!-- Formation Name -->
+  <TextView
+      android:id="@+id/dive_point_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/dive_point_num"
+      android:layout_toRightOf="@+id/dive_point_image"
+      android:textColor="#09c697"
+      android:textSize="15dip"
+      android:textStyle="bold"
+      />
+  
+  <!-- Formation ID -->
+  <TextView
+      android:id="@+id/dive_point_id"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/dive_point_name"
+      android:textColor="#98dc1a"
+      android:textSize="10dip"
+      android:layout_marginTop="1dip"
+      android:layout_toRightOf="@+id/dive_point_image"
+      />
+  
+  <!--
+  <Button
+      android:id="@+id/dive_view_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentTop="false"
+      android:layout_alignParentBottom="true"
+      android:layout_below="@+id/dive_point_id"
+      android:text="@string/edit_point"
+      android:onClick="editPoint"
+      />
+  -->
+  <!-- Rightend Arrow -->
+  <!--
+  <ImageView android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/arrow"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"/>
+  -->
+
+</RelativeLayout>
