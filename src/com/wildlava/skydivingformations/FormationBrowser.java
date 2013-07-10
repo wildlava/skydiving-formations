@@ -214,8 +214,8 @@ public class FormationBrowser extends Activity
           Configuration.ORIENTATION_LANDSCAPE)
       {
          //formationImageSize = metrics.heightPixels - 240;
-	 textScaleFactor = (float) metrics.heightPixels / (float) 350.0;
-	 diveImageSize = (int) ((float) metrics.heightPixels * 0.55);
+         textScaleFactor = (float) metrics.heightPixels / (float) 350.0;
+         diveImageSize = (int) ((float) metrics.heightPixels * 0.55);
       }
       else
       {
@@ -231,15 +231,15 @@ public class FormationBrowser extends Activity
             formationImageSize = sizeByWidth;
          }
          */
-	 textScaleFactor = (float) metrics.widthPixels / (float) 350.0;
-	 diveImageSize = (int) ((float) metrics.widthPixels * 0.55);
+         textScaleFactor = (float) metrics.widthPixels / (float) 350.0;
+         diveImageSize = (int) ((float) metrics.widthPixels * 0.55);
       }
 
       // Set text sizes based on scale factor
       formationNameView.setTextSize(TypedValue.COMPLEX_UNIT_PX,
-      				    (int) (15.0 * textScaleFactor));
+                                    (int) (15.0 * textScaleFactor));
       diveNumPointsView.setTextSize(TypedValue.COMPLEX_UNIT_PX,
-				    (int) (12.0 * textScaleFactor));
+                                    (int) (12.0 * textScaleFactor));
 
       //formationThumbnailImageSize = (int) ((double) formationViewSize / 3.75);
       
@@ -268,7 +268,6 @@ public class FormationBrowser extends Activity
       // Restore saved state
       if (savedInstanceState != null)
       {
-         //Log.v("Debug", "onCreate setFormationSize(" + savedInstanceState.getInt("formationSize") + ")");
          setFormationSize(savedInstanceState.getInt("formationSize"), false);
          //currentFormationSize = savedInstanceState.getInt("formationSize");
 
@@ -278,17 +277,9 @@ public class FormationBrowser extends Activity
          diveFormationIds = savedInstanceState.getStringArray("diveFormationIds");
          diveFormationNames = savedInstanceState.getStringArray("diveFormationNames");
          
-         // If not done, gallery will not appear
-         formationGalleryAdapter.notifyDataSetChanged();
-
-         //for (int i=0; i<diveNumPoints; ++i)
-         //{
-         //   Log.v("Debug", "dive point restored: " + diveFormationNames[i]);
-         //}
-
-	 // This appears necessary because sometimes changing orientation
-	 // after changing formation size results in a blank text field.
-	 formationNameView.setText(formationName[eligibleFormations[selectedFormation]]);
+         // This appears necessary because sometimes changing orientation
+         // after changing formation size results in a blank text field.
+         formationNameView.setText(formationName[eligibleFormations[selectedFormation]]);
 
          if (diveNumPoints > 0)
          {
@@ -299,7 +290,6 @@ public class FormationBrowser extends Activity
       }
       else
       {
-         //Log.v("Debug", "onCreate setFormationSize(" + DEFAULT_FORMATION_SIZE + ")");
          setFormationSize(DEFAULT_FORMATION_SIZE, true);
 
          diveFormationIds = new String[DIVE_MAX_NUM_POINTS];
@@ -460,10 +450,17 @@ public class FormationBrowser extends Activity
 
    void setFormationSize(int n, boolean reset)
    {
+      boolean dataChanged = false;
+
       //if (n == currentFormationSize || n == 0)
       if (n == currentFormationSize)
       {
          return;
+      }
+      
+      if (currentFormationSize > 0)
+      {
+         dataChanged = true;
       }
 
       currentFormationSize = n;
@@ -510,15 +507,21 @@ public class FormationBrowser extends Activity
       
       //loading_msg.cancel();
 
+      // Necessary even when not resetting, or gallery does not appear
+      formationGalleryAdapter.notifyDataSetChanged();
+
       if (reset)
       {
+         if (dataChanged)
+         {
+            //formationViewAdapter.notifyDataSetChanged();
+            formationViewAdapter = new FormationViewAdapter(this);
+            formationView.setAdapter(formationViewAdapter);
+         }
+
          selectedFormation = 0;
-	 formationViewAdapter = new FormationViewAdapter(this);
-	 formationView.setAdapter(formationViewAdapter);
-         //formationViewAdapter.notifyDataSetChanged();
          formationView.setCurrentItem(0);
          formationNameView.setText(formationName[eligibleFormations[0]]);
-         formationGalleryAdapter.notifyDataSetChanged();
          formationGallery.setSelection(0, true);
       }
    }

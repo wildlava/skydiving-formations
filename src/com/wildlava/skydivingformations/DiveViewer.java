@@ -247,19 +247,19 @@ public class DiveViewer extends Activity
          //Log.v("Debug", "DiveView: point name: " + v.findViewById(R.id.dive_point_name));
          //Log.v("Debug", "DiveView: point id: " + v.findViewById(R.id.dive_point_id));
          TextView divePointNum = (TextView) v.findViewById(R.id.dive_point_num);
-	 divePointNum.setText("Point " + (position + 1));
-	 divePointNum.setTextSize(TypedValue.COMPLEX_UNIT_PX,
-				  (int) (10.0 * textScaleFactor));
+         divePointNum.setText("Point " + (position + 1));
+         divePointNum.setTextSize(TypedValue.COMPLEX_UNIT_PX,
+                                  (int) (10.0 * textScaleFactor));
 
          TextView divePointName = (TextView) v.findViewById(R.id.dive_point_name);
          divePointName.setText(diveFormationNames[position]);
-	 divePointName.setTextSize(TypedValue.COMPLEX_UNIT_PX,
-				   (int) (15.0 * textScaleFactor));
+         divePointName.setTextSize(TypedValue.COMPLEX_UNIT_PX,
+                                   (int) (15.0 * textScaleFactor));
 
          TextView divePointId = (TextView) v.findViewById(R.id.dive_point_id);
          divePointId.setText(diveFormationIds[position]);
-	 divePointId.setTextSize(TypedValue.COMPLEX_UNIT_PX,
-				 (int) (10.0 * textScaleFactor));
+         divePointId.setTextSize(TypedValue.COMPLEX_UNIT_PX,
+                                 (int) (10.0 * textScaleFactor));
 
          try
          {
