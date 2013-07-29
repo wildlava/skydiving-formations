@@ -64,14 +64,14 @@ public class DiveViewer extends Activity
    int diveNumPoints;
    String[] diveFormationIds;
    String[] diveFormationNames;
-   
+
    Button poolViewButton;
 
    ListView divePointsView;
    DivePointsAdapter divePointsAdapter;
 
    Intent resultIntent;
-   
+
    @Override
    protected void onCreate(Bundle savedInstanceState)
    {
@@ -107,7 +107,7 @@ public class DiveViewer extends Activity
       poolViewButton = (Button) findViewById(R.id.pool_view_button);
       //poolViewButton = new Button(this);
       //divePointsView.addFooterView(poolViewButton);
-      
+
       divePointsAdapter = new DivePointsAdapter(this);
       divePointsView.setAdapter(divePointsAdapter);
       registerForContextMenu(divePointsView);
@@ -119,10 +119,10 @@ public class DiveViewer extends Activity
       outState.putInt("diveNumPoints", diveNumPoints);
       outState.putStringArray("diveFormationIds", diveFormationIds);
       outState.putStringArray("diveFormationNames", diveFormationNames);
-      
+
       super.onSaveInstanceState(outState);
    }
-   
+
    @Override
    public void onCreateContextMenu(ContextMenu menu, View v,
                                    ContextMenuInfo menuInfo)
@@ -142,7 +142,7 @@ public class DiveViewer extends Activity
          menu.findItem(R.id.dive_point_menu_move_down).setEnabled(false);
       }
    }
-   
+
    @Override
    public boolean onContextItemSelected(MenuItem item)
    {
@@ -162,7 +162,7 @@ public class DiveViewer extends Activity
             return super.onContextItemSelected(item);
       }
    }
-   
+
    void updateFormation()
    {
       resultIntent = new Intent();
@@ -172,12 +172,12 @@ public class DiveViewer extends Activity
 
       setResult(RESULT_OK, resultIntent);
    }
-   
+
    void deletePoint(int pointNum)
    {
       //if (diveNumPoints == 0)
       //   return;
-      
+
       for (int i=pointNum; i<(diveNumPoints - 1); ++i)
       {
          diveFormationIds[i] = diveFormationIds[i + 1];
@@ -189,7 +189,7 @@ public class DiveViewer extends Activity
       divePointsAdapter.notifyDataSetChanged();
       updateFormation();
    }
-   
+
    void movePointUp(int pointNum)
    {
       String tmpFormationId = diveFormationIds[pointNum];
@@ -198,11 +198,11 @@ public class DiveViewer extends Activity
       diveFormationNames[pointNum] = diveFormationNames[pointNum - 1];
       diveFormationIds[pointNum - 1] = tmpFormationId;
       diveFormationNames[pointNum - 1] = tmpFormationName;
-      
+
       divePointsAdapter.notifyDataSetChanged();
       updateFormation();
    }
-   
+
    void movePointDown(int pointNum)
    {
       String tmpFormationId = diveFormationIds[pointNum];
@@ -211,47 +211,47 @@ public class DiveViewer extends Activity
       diveFormationNames[pointNum] = diveFormationNames[pointNum + 1];
       diveFormationIds[pointNum + 1] = tmpFormationId;
       diveFormationNames[pointNum + 1] = tmpFormationName;
-      
+
       divePointsAdapter.notifyDataSetChanged();
       updateFormation();
    }
-   
+
    public void poolView(View view)
    {
       finish();
    }
-   
+
    public class DivePointsAdapter extends BaseAdapter
    {
       private Context mContext;
       private LayoutInflater inflater;
-      
+
       public DivePointsAdapter(Context c)
       {
          mContext = c;
          inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
       }
-      
+
       public int getCount()
       {
          return diveNumPoints;
       }
-      
+
       public Object getItem(int position)
       {
          return position;
       }
-      
+
       public long getItemId(int position)
       {
          return position;
       }
-      
+
       public View getView(int position, View convertView, ViewGroup parent)
       {
          View v;
          ImageView imageView;
-         
+
          if (convertView == null)
          {
             v = inflater.inflate(R.layout.dive_point, null);
@@ -266,7 +266,7 @@ public class DiveViewer extends Activity
             v = convertView;
             imageView = (ImageView) v.findViewById(R.id.dive_point_image);
          }
-         
+
          //Log.v("Debug", "DiveView: point num: " + v.findViewById(R.id.dive_point_num));
          //Log.v("Debug", "DiveView: point name: " + v.findViewById(R.id.dive_point_name));
          //Log.v("Debug", "DiveView: point id: " + v.findViewById(R.id.dive_point_id));

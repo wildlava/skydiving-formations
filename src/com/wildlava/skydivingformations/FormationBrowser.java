@@ -60,13 +60,13 @@ public class FormationBrowser extends Activity
 {
    public static final int DIVE_MAX_NUM_POINTS = 32;
    public static final int DEFAULT_FORMATION_SIZE = 8;
-   
+
    public static final String EXTRA_MESSAGE_TEXT_SCALE_FACTOR = "com.wildlava.skydivingformations.MESSAGE_TEXT_SCALE_FACTOR";
    public static final String EXTRA_MESSAGE_IMAGE_SIZE = "com.wildlava.skydivingformations.MESSAGE_IMAGE_SIZE";
    public static final String EXTRA_MESSAGE_NUM_POINTS = "com.wildlava.skydivingformations.MESSAGE_NUM_POINTS";
    public static final String EXTRA_MESSAGE_FORMATION_IDS = "com.wildlava.skydivingformations.MESSAGE_FORMATION_IDS";
    public static final String EXTRA_MESSAGE_FORMATION_NAMES = "com.wildlava.skydivingformations.MESSAGE_FORMATION_NAMES";
-      
+
    int currentFormationSize = 0;
    int[] formationSize;
    int[] formationNum;
@@ -91,22 +91,22 @@ public class FormationBrowser extends Activity
    ViewTreeObserver formationViewObserver;
    TextView formationNameView;
    //TextView formationIdView;
-   
+
    int diveNumPoints = 0;
    //int[] diveFormations;
    String[] diveFormationIds;
    String[] diveFormationNames;
-   
+
    Gallery formationGallery;
    FormationGalleryAdapter formationGalleryAdapter;
-   
+
    Button clearDiveButton;
    Button addPointButton;
    Button diveViewButton;
    TextView diveNumPointsView;
 
    boolean showSplash = true;
-   
+
    @Override
    protected void onCreate(Bundle savedInstanceState)
    {
@@ -141,7 +141,7 @@ public class FormationBrowser extends Activity
 
       // Get formation view padding
       formationImagePadding = getResources().getDimensionPixelSize(R.dimen.padding_medium);
-      
+
       // Set up the adapter and listener for
       // the horizontal-scrolling formation view.
       formationViewAdapter = new FormationViewAdapter(this);
@@ -160,7 +160,7 @@ public class FormationBrowser extends Activity
                //formationGallery.setSelection(position, true);
             }
          });
-      
+
       // Set up a listener to get formation image view size
       formationViewObserver = formationView.getViewTreeObserver();
       formationViewObserver.addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener()
@@ -175,7 +175,7 @@ public class FormationBrowser extends Activity
                   {
                      return true;
                   }
-                  
+
                   formationImageSize = h;
                }
                else
@@ -184,7 +184,7 @@ public class FormationBrowser extends Activity
                   {
                      return true;
                   }
-                  
+
                   formationImageSize = w;
                }
                //Log.v("Debug", "viewW = " + w);
@@ -200,11 +200,11 @@ public class FormationBrowser extends Activity
                      setFormationImageView(v, (Integer) v.getTag());
                   }
                }
-               
+
                return true;
             }
          });
-      
+
       // Find screen resolution to determine various scale factors
       DisplayMetrics metrics = new DisplayMetrics();
       getWindowManager().getDefaultDisplay().getMetrics(metrics);
@@ -242,7 +242,7 @@ public class FormationBrowser extends Activity
                                     (int) (12.0 * textScaleFactor));
 
       //formationThumbnailImageSize = (int) ((double) formationViewSize / 3.75);
-      
+
       // Set up the formation gallery widget
       formationGalleryAdapter = new FormationGalleryAdapter(this);
       formationGallery.setAdapter(formationGalleryAdapter);
@@ -264,7 +264,7 @@ public class FormationBrowser extends Activity
             //   //selectFormation(0);
             //}
          });
-      
+
       // Restore saved state
       if (savedInstanceState != null)
       {
@@ -276,7 +276,7 @@ public class FormationBrowser extends Activity
          diveNumPoints = savedInstanceState.getInt("diveNumPoints");
          diveFormationIds = savedInstanceState.getStringArray("diveFormationIds");
          diveFormationNames = savedInstanceState.getStringArray("diveFormationNames");
-         
+
          // This appears necessary because sometimes changing orientation
          // after changing formation size results in a blank text field.
          formationNameView.setText(formationName[eligibleFormations[selectedFormation]]);
@@ -319,7 +319,7 @@ public class FormationBrowser extends Activity
          formationSizeSpinner.setSelection(DEFAULT_FORMATION_SIZE - 2);
       }
    }
-   
+
    @Override
    protected void onStart()
    {
@@ -338,7 +338,7 @@ public class FormationBrowser extends Activity
          showSplash = false;
       }
    }
-   
+
    @Override
    protected void onSaveInstanceState(Bundle outState)
    {
@@ -347,15 +347,15 @@ public class FormationBrowser extends Activity
       outState.putInt("diveNumPoints", diveNumPoints);
       outState.putStringArray("diveFormationIds", diveFormationIds);
       outState.putStringArray("diveFormationNames", diveFormationNames);
-      
+
       //for (int i=0; i<diveNumPoints; ++i)
       //{
       //   Log.v("Debug", "dive point saved: " + diveFormationNames[i]);
       //}
-      
+
       super.onSaveInstanceState(outState);
    }
-   
+
    @Override
    protected void onActivityResult(int requestCode, int resultCode,
                                    Intent intent)
@@ -373,11 +373,11 @@ public class FormationBrowser extends Activity
          diveNumPointsView.setText("Dive points: " + diveNumPoints + " ");
       }
    }
-   
+
    void readFormationIndex()
    {
       BufferedReader file = new BufferedReader(new InputStreamReader(getResources().openRawResource(R.raw.formation_index)));
-      
+
       int num_formations = 0;
       try
       {
@@ -393,10 +393,10 @@ public class FormationBrowser extends Activity
          catch (java.io.IOException y)
          {
          }
-         
+
          return;
       }
-      
+
       try
       {
          file.close();
@@ -409,9 +409,9 @@ public class FormationBrowser extends Activity
       formationNum = new int[num_formations];
       formationId = new String[num_formations];
       formationName = new String[num_formations];
-      
+
       file = new BufferedReader(new InputStreamReader(getResources().openRawResource(R.raw.formation_index)));
-      
+
       for (int i=0; i<num_formations; ++i)
       {
          String line;
@@ -429,10 +429,10 @@ public class FormationBrowser extends Activity
             catch (java.io.IOException y)
             {
             }
-            
+
             return;
          }
-         
+
          line = line.trim();
 
          formationSize[i] = Integer.parseInt(line.substring(0, 2));
@@ -459,14 +459,14 @@ public class FormationBrowser extends Activity
       {
          return;
       }
-      
+
       if (currentFormationSize > 0)
       {
          dataChanged = true;
       }
 
       currentFormationSize = n;
-      
+
       // Select the formations of the given size
       numEligibleFormations = 0;
       for (int i=0; i<formationSize.length; ++i)
@@ -476,18 +476,18 @@ public class FormationBrowser extends Activity
       }
 
       eligibleFormations = new int[numEligibleFormations];
-      
+
       int j = 0;
       for (int i=0; i<formationSize.length; ++i)
       {
          if (formationSize[i] == currentFormationSize)
             eligibleFormations[j++] = i;
       }
-      
+
       // Populate gallery bitmaps with scaled versions of
       // the selected formations.
       //formationThumbnailBitmaps = new Bitmap[numEligibleFormations];
-   
+
       /*
       for (int i=0; i<numEligibleFormations; ++i)
       {
@@ -506,7 +506,7 @@ public class FormationBrowser extends Activity
          }
       }
       */
-      
+
       //loading_msg.cancel();
 
       // Necessary even when not resetting, or gallery does not appear
@@ -527,7 +527,7 @@ public class FormationBrowser extends Activity
          formationGallery.setSelection(0, true);
       }
    }
-   
+
    public void clearDive(View view)
    {
       diveNumPoints = 0;
@@ -536,22 +536,22 @@ public class FormationBrowser extends Activity
 
       diveNumPointsView.setText("Dive points: 0 ");
    }
-   
+
    public void addPoint(View view)
    {
       if (diveNumPoints < DIVE_MAX_NUM_POINTS)
       {
          int n = eligibleFormations[selectedFormation];
-         
+
          //diveFormations[diveNumPoints] = n;
          diveFormationIds[diveNumPoints] = formationId[n];
          diveFormationNames[diveNumPoints] = formationName[n];
          //diveFormationImages[diveNumPoints] = formationName[n];
 
          ++diveNumPoints;
-         
+
          //divePointsAdapter.notifyDataSetChanged();
-         
+
          if (diveNumPoints == DIVE_MAX_NUM_POINTS)
          {
             addPointButton.setEnabled(false);
@@ -572,7 +572,7 @@ public class FormationBrowser extends Activity
       intent.putExtra(EXTRA_MESSAGE_FORMATION_NAMES, diveFormationNames);
       startActivityForResult(intent, 0);
    }
-   
+
    void setFormationImageView(ImageView imageView, int position)
    {
       try
@@ -585,11 +585,11 @@ public class FormationBrowser extends Activity
       {
       }
    }
-   
+
    public class FormationViewAdapter extends PagerAdapter
    {
       private Context mContext;
-      
+
       public FormationViewAdapter(Context c)
       {
          mContext = c;
@@ -600,37 +600,37 @@ public class FormationBrowser extends Activity
       {
          return numEligibleFormations;
       }
-      
+
       @Override
       public boolean isViewFromObject(View view, Object object)
       {
          return view == ((ImageView) object);
       }
-      
+
       @Override
       public Object instantiateItem(ViewGroup container, int position)
       {
          //Log.v("Debug", "formationImageSize = " + formationImageSize);
 
          ImageView imageView = new ImageView(mContext);
-         
+
          imageView.setPadding(formationImagePadding,
                               0,
                               formationImagePadding,
                               0);
          //imageView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
-         
+
          if (formationImageSize > 0)
          {
             setFormationImageView(imageView, position);
          }
 
          imageView.setTag(Integer.valueOf(position));
-         
+
          ((ViewPager) container).addView(imageView, 0);
          return imageView;
       }
-      
+
       @Override
       public void destroyItem(ViewGroup container, int position, Object object)
       {
@@ -648,7 +648,7 @@ public class FormationBrowser extends Activity
    {
       int mGalleryItemBackground;
       private Context mContext;
-      
+
       public FormationGalleryAdapter(Context c)
       {
          mContext = c;
@@ -656,22 +656,22 @@ public class FormationBrowser extends Activity
          mGalleryItemBackground = attr.getResourceId(R.styleable.formation_gallery_android_galleryItemBackground, 0);
          attr.recycle();
       }
-      
+
       public int getCount()
       {
          return numEligibleFormations;
       }
-      
+
       public Object getItem(int position)
       {
          return position;
       }
-      
+
       public long getItemId(int position)
       {
          return position;
       }
-      
+
       public View getView(int position, View convertView, ViewGroup parent)
       {
          ImageView imageView;
@@ -701,7 +701,7 @@ public class FormationBrowser extends Activity
          catch (java.io.IOException x)
          {
          }
-         
+
          return imageView;
       }
    }
