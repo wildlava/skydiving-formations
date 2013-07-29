@@ -80,9 +80,22 @@ public class DiveViewer extends Activity
       Intent intent = getIntent();
       textScaleFactor = intent.getFloatExtra(FormationBrowser.EXTRA_MESSAGE_TEXT_SCALE_FACTOR, (float) 0.0);
       diveImageSize = intent.getIntExtra(FormationBrowser.EXTRA_MESSAGE_IMAGE_SIZE, 0);
-      diveNumPoints = intent.getIntExtra(FormationBrowser.EXTRA_MESSAGE_NUM_POINTS, 0);
-      diveFormationIds = intent.getStringArrayExtra(FormationBrowser.EXTRA_MESSAGE_FORMATION_IDS);
-      diveFormationNames = intent.getStringArrayExtra(FormationBrowser.EXTRA_MESSAGE_FORMATION_NAMES);
+
+      // Restore saved state
+      if (savedInstanceState != null)
+      {
+         diveNumPoints = savedInstanceState.getInt("diveNumPoints");
+         diveFormationIds = savedInstanceState.getStringArray("diveFormationIds");
+         diveFormationNames = savedInstanceState.getStringArray("diveFormationNames");
+      }
+      else
+      {
+         diveNumPoints = intent.getIntExtra(FormationBrowser.EXTRA_MESSAGE_NUM_POINTS, 0);
+         diveFormationIds = intent.getStringArrayExtra(FormationBrowser.EXTRA_MESSAGE_FORMATION_IDS);
+         diveFormationNames = intent.getStringArrayExtra(FormationBrowser.EXTRA_MESSAGE_FORMATION_NAMES);
+      }
+
+      updateFormation();
 
       setContentView(R.layout.dive);
 
@@ -100,6 +113,16 @@ public class DiveViewer extends Activity
       registerForContextMenu(divePointsView);
    }
 
+   @Override
+   protected void onSaveInstanceState(Bundle outState)
+   {
+      outState.putInt("diveNumPoints", diveNumPoints);
+      outState.putStringArray("diveFormationIds", diveFormationIds);
+      outState.putStringArray("diveFormationNames", diveFormationNames);
+      
+      super.onSaveInstanceState(outState);
+   }
+   
    @Override
    public void onCreateContextMenu(ContextMenu menu, View v,
                                    ContextMenuInfo menuInfo)
@@ -142,8 +165,6 @@ public class DiveViewer extends Activity
    
    void updateFormation()
    {
-      divePointsAdapter.notifyDataSetChanged();
-
       resultIntent = new Intent();
       resultIntent.putExtra(FormationBrowser.EXTRA_MESSAGE_NUM_POINTS, diveNumPoints);
       resultIntent.putExtra(FormationBrowser.EXTRA_MESSAGE_FORMATION_IDS, diveFormationIds);
@@ -165,6 +186,7 @@ public class DiveViewer extends Activity
 
       --diveNumPoints;
 
+      divePointsAdapter.notifyDataSetChanged();
       updateFormation();
    }
    
@@ -177,6 +199,7 @@ public class DiveViewer extends Activity
       diveFormationIds[pointNum - 1] = tmpFormationId;
       diveFormationNames[pointNum - 1] = tmpFormationName;
       
+      divePointsAdapter.notifyDataSetChanged();
       updateFormation();
    }
    
@@ -189,6 +212,7 @@ public class DiveViewer extends Activity
       diveFormationIds[pointNum + 1] = tmpFormationId;
       diveFormationNames[pointNum + 1] = tmpFormationName;
       
+      divePointsAdapter.notifyDataSetChanged();
       updateFormation();
    }
    
