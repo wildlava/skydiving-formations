@@ -105,7 +105,7 @@ public class FormationBrowser extends Activity
    Button diveViewButton;
    TextView diveNumPointsView;
 
-   boolean showSpash = true;
+   boolean showSplash = true;
    
    @Override
    protected void onCreate(Bundle savedInstanceState)
@@ -286,7 +286,7 @@ public class FormationBrowser extends Activity
             clearDiveButton.setEnabled(true);
          }
 
-         showSpash = false;
+         showSplash = false;
       }
       else
       {
@@ -325,7 +325,7 @@ public class FormationBrowser extends Activity
    {
       super.onStart();
 
-      if (showSpash)
+      if (showSplash)
       {
          // Display a dialog about the "Lite" version if applicable
          if (this.getClass().getCanonicalName().equals("com.wildlava.skydivingformationslite.FormationBrowser"))
@@ -334,6 +334,8 @@ public class FormationBrowser extends Activity
             dialog.setNeutralButton("OK", null);
             dialog.setMessage("This is the \"Lite\" version of the app.  Except for 9-ways, this \"Lite\" version contains only 5 formations in each size.  The full version of the app includes the complete set of formations (over 1000 in total).").create().show();
          }
+
+         showSplash = false;
       }
    }
    
