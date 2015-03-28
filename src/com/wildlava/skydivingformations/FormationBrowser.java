@@ -1,7 +1,7 @@
 //
 // Skydiving Formations
 //
-// Copyright (C) 2013  Joe Peterson
+// Copyright (C) 2015  Joe Peterson
 //
 
 package com.wildlava.skydivingformations;
