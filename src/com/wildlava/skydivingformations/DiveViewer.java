@@ -6,19 +6,13 @@
 
 package com.wildlava.skydivingformations;
 
-//import android.util.Log;
-
 import android.app.Activity;
-//import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Gallery;
 import android.widget.ListView;
 import android.widget.BaseAdapter;
 import android.content.Context;
-//import android.content.res.Configuration;
-//import android.widget.FrameLayout;
-//import android.widget.LinearLayout;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.LayoutInflater;
@@ -30,32 +24,19 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemSelectedListener;
-//import android.widget.Toast;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Button;
-//import android.widget.TabHost;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.widget.TextView;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
-//import android.widget.EditText;
-//import android.widget.Button;
-//import android.view.View;
-//import android.view.KeyEvent;
-//import android.view.View.OnKeyListener;
-//import android.view.View.OnClickListener;
-//import android.view.Gravity;
-//import android.view.inputmethod.InputMethodManager;
-//import android.graphics.Typeface;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-//import java.io.FileReader;
 import java.io.BufferedReader;
-//import android.content.res.Resources.NotFoundException;
 
 public class DiveViewer extends Activity
 {
@@ -101,12 +82,9 @@ public class DiveViewer extends Activity
 
       // The "Dive View"
       divePointsView = (ListView) findViewById(R.id.dive_points_view);
-      //divePointsView.addFooterView(findViewById(R.id.dive_footer_layout));
       divePointsView.addFooterView(getLayoutInflater().inflate(R.layout.dive_footer, divePointsView, false));
       ((TextView) findViewById(R.id.dive_view_notes)).setTextSize(TypedValue.COMPLEX_UNIT_PX, (int) (10.0 * textScaleFactor));
       poolViewButton = (Button) findViewById(R.id.pool_view_button);
-      //poolViewButton = new Button(this);
-      //divePointsView.addFooterView(poolViewButton);
 
       divePointsAdapter = new DivePointsAdapter(this);
       divePointsView.setAdapter(divePointsAdapter);
@@ -175,9 +153,6 @@ public class DiveViewer extends Activity
 
    void deletePoint(int pointNum)
    {
-      //if (diveNumPoints == 0)
-      //   return;
-
       for (int i=pointNum; i<(diveNumPoints - 1); ++i)
       {
          diveFormationIds[i] = diveFormationIds[i + 1];
@@ -256,10 +231,6 @@ public class DiveViewer extends Activity
          {
             v = inflater.inflate(R.layout.dive_point, null);
             imageView = (ImageView) v.findViewById(R.id.dive_point_image);
-            //imageView.setImageResource(formation_image_ids[position]);
-            //imageView.setLayoutParams(new Gallery.LayoutParams(100, 100));
-            //imageView.setScaleType(ImageView.ScaleType.FIT_XY);
-            //imageView.setBackgroundResource(mGalleryItemBackground);
          }
          else
          {
@@ -267,9 +238,6 @@ public class DiveViewer extends Activity
             imageView = (ImageView) v.findViewById(R.id.dive_point_image);
          }
 
-         //Log.v("Debug", "DiveView: point num: " + v.findViewById(R.id.dive_point_num));
-         //Log.v("Debug", "DiveView: point name: " + v.findViewById(R.id.dive_point_name));
-         //Log.v("Debug", "DiveView: point id: " + v.findViewById(R.id.dive_point_id));
          TextView divePointNum = (TextView) v.findViewById(R.id.dive_point_num);
          divePointNum.setText("Point " + (position + 1));
          divePointNum.setTextSize(TypedValue.COMPLEX_UNIT_PX,
@@ -290,7 +258,6 @@ public class DiveViewer extends Activity
             InputStream image_stream = mContext.getAssets().open(String.format("formations/%s.png", diveFormationIds[position]));
             imageView.setImageBitmap(Bitmap.createScaledBitmap(BitmapFactory.decodeStream(image_stream), diveImageSize, diveImageSize, true));
             image_stream.close();
-            //imageView.setImageBitmap(diveFormationImage[position]);
          }
          catch (java.io.IOException x)
          {
