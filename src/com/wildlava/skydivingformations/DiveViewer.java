@@ -38,6 +38,11 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.BufferedReader;
 
+/**
+ * Provides the user with a constructed "dive" (skydive), allowing
+ * the user to vertically scroll through the points of the dive
+ * and make simple edits (to delete points or change their order).
+ */
 public class DiveViewer extends Activity
 {
    float textScaleFactor;
@@ -53,6 +58,9 @@ public class DiveViewer extends Activity
 
    Intent resultIntent;
 
+   /**
+    * Initializes the user interface, allowing viewing and editing of the dive.
+    */
    @Override
    protected void onCreate(Bundle savedInstanceState)
    {
@@ -80,7 +88,7 @@ public class DiveViewer extends Activity
 
       setContentView(R.layout.dive);
 
-      // The "Dive View"
+      // The "Dive View" (vertically-scrolling list of point images/info)
       divePointsView = (ListView) findViewById(R.id.dive_points_view);
       divePointsView.addFooterView(getLayoutInflater().inflate(R.layout.dive_footer, divePointsView, false));
       ((TextView) findViewById(R.id.dive_view_notes)).setTextSize(TypedValue.COMPLEX_UNIT_PX, (int) (10.0 * textScaleFactor));
@@ -91,6 +99,10 @@ public class DiveViewer extends Activity
       registerForContextMenu(divePointsView);
    }
 
+   /**
+    * Saves the the state of the activity, including the constructed dive,
+    * so the user can resume viewing/editing the dive later.
+    */
    @Override
    protected void onSaveInstanceState(Bundle outState)
    {
@@ -101,6 +113,10 @@ public class DiveViewer extends Activity
       super.onSaveInstanceState(outState);
    }
 
+   /**
+    * Brings up a menu when the user long-presses.
+    * This allows editing the dive.
+    */
    @Override
    public void onCreateContextMenu(ContextMenu menu, View v,
                                    ContextMenuInfo menuInfo)
@@ -121,6 +137,9 @@ public class DiveViewer extends Activity
       }
    }
 
+   /**
+    * Performs the edit that the user selects from the menu.
+    */
    @Override
    public boolean onContextItemSelected(MenuItem item)
    {
@@ -141,6 +160,10 @@ public class DiveViewer extends Activity
       }
    }
 
+   /**
+    * Updates the info to be returned to the FormationBrowser activity after
+    * an edit is performed by the user.
+    */
    void updateFormation()
    {
       resultIntent = new Intent();
@@ -151,6 +174,9 @@ public class DiveViewer extends Activity
       setResult(RESULT_OK, resultIntent);
    }
 
+   /**
+    * Deletes the selected point from the dive.
+    */
    void deletePoint(int pointNum)
    {
       for (int i=pointNum; i<(diveNumPoints - 1); ++i)
@@ -165,6 +191,9 @@ public class DiveViewer extends Activity
       updateFormation();
    }
 
+   /**
+    * Swaps the selected point with the previous point.
+    */
    void movePointUp(int pointNum)
    {
       String tmpFormationId = diveFormationIds[pointNum];
@@ -178,6 +207,9 @@ public class DiveViewer extends Activity
       updateFormation();
    }
 
+   /**
+    * Swaps the selected point with the next point.
+    */
    void movePointDown(int pointNum)
    {
       String tmpFormationId = diveFormationIds[pointNum];
@@ -191,11 +223,19 @@ public class DiveViewer extends Activity
       updateFormation();
    }
 
+   /**
+    * Returns to the FormationViewer activity (caller).
+    */
    public void poolView(View view)
    {
       finish();
    }
 
+   /**
+    * Provides an adapter to allow vertical scrolling of the dive point
+    * images/info. Images are scaled in the app to correctly fit
+    * the list views.
+    */
    public class DivePointsAdapter extends BaseAdapter
    {
       private Context mContext;

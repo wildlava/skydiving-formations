@@ -35,6 +35,11 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.BufferedReader;
 
+/**
+ * Presents the user with a pool of skydiving formations from which to choose.
+ * Formations ("points") can be added together to form a "dive" (skydive).
+ * This is the main activity.
+ */
 public class FormationBrowser extends Activity
 {
    public static final int DIVE_MAX_NUM_POINTS = 32;
@@ -79,6 +84,10 @@ public class FormationBrowser extends Activity
 
    boolean showSplash = true;
 
+   /**
+    * Initializes the user interface, which allows browsing with both a
+    * thumbnail gallery and a single formation pager.
+    */
    @Override
    protected void onCreate(Bundle savedInstanceState)
    {
@@ -96,7 +105,7 @@ public class FormationBrowser extends Activity
 
       readFormationIndex();
 
-      // The "Pool View"
+      // The "Thumbnail Pool" gallery
       formationGallery = (Gallery) findViewById(R.id.formation_gallery);
       formationView = (ViewPager) findViewById(R.id.formation_view);
       formationNameView = (TextView) findViewById(R.id.formation_name_view);
@@ -106,11 +115,9 @@ public class FormationBrowser extends Activity
       addPointButton = (Button) findViewById(R.id.add_point_button);
       diveViewButton = (Button) findViewById(R.id.dive_view_button);
 
-      // Get formation view padding
+      // The main "Formation View" (horizontally-scrolling pager)
       formationImagePadding = getResources().getDimensionPixelSize(R.dimen.padding_medium);
 
-      // Set up the adapter and listener for
-      // the horizontal-scrolling formation view.
       formationViewAdapter = new FormationViewAdapter(this);
       formationView.setAdapter(formationViewAdapter);
       formationView.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener()
@@ -123,7 +130,8 @@ public class FormationBrowser extends Activity
             }
          });
 
-      // Set up a listener to get formation image view size
+      // Set up a listener to determine the rendered size of the views in the
+      // formation image pager. We will use this later for scaling the images.
       formationViewObserver = formationView.getViewTreeObserver();
       formationViewObserver.addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener()
          {
@@ -253,6 +261,10 @@ public class FormationBrowser extends Activity
       }
    }
 
+   /**
+    * Displays a message to the user on startup if this is the
+    * "Lite" (free) version.
+    */
    @Override
    protected void onStart()
    {
@@ -272,6 +284,10 @@ public class FormationBrowser extends Activity
       }
    }
 
+   /**
+    * Saves the the state of the activity, including the constructed dive,
+    * so the user can resume working on the dive later.
+    */
    @Override
    protected void onSaveInstanceState(Bundle outState)
    {
@@ -284,6 +300,11 @@ public class FormationBrowser extends Activity
       super.onSaveInstanceState(outState);
    }
 
+   /**
+    * Returns the dive info (with any edits made) from the DiveViewer
+    * activity. This enables the user to add more points and then
+    * return to the DiveViewer later.
+    */
    @Override
    protected void onActivityResult(int requestCode, int resultCode,
                                    Intent intent)
@@ -302,6 +323,12 @@ public class FormationBrowser extends Activity
       }
    }
 
+   /**
+    * Reads the dive pool info, supplied with the app.
+    * This provides information about each formation
+    * (name, ID, number of jumpers, and a reference to the
+    * formation image).
+    */
    void readFormationIndex()
    {
       BufferedReader file = new BufferedReader(new InputStreamReader(getResources().openRawResource(R.raw.formation_index)));
@@ -378,6 +405,10 @@ public class FormationBrowser extends Activity
       }
    }
 
+   /**
+    * Sets the formation size (number of jumpers in the skydiving group).
+    * This is used to select which formations from the pool are presented.
+    */
    void setFormationSize(int n, boolean reset)
    {
       boolean dataChanged = false;
@@ -429,6 +460,9 @@ public class FormationBrowser extends Activity
       }
    }
 
+   /**
+    * Removes all points from the dive, allowing the user to start over.
+    */
    public void clearDive(View view)
    {
       diveNumPoints = 0;
@@ -438,6 +472,9 @@ public class FormationBrowser extends Activity
       diveNumPointsView.setText("Dive points: 0 ");
    }
 
+   /**
+    * Adds the currently selected formation as the next point in the dive.
+    */
    public void addPoint(View view)
    {
       if (diveNumPoints < DIVE_MAX_NUM_POINTS)
@@ -459,6 +496,10 @@ public class FormationBrowser extends Activity
       }
    }
 
+   /**
+    * Switches to the DiveViewer activity, where the dive can be viewed
+    * and edited.
+    */
    public void diveView(View view)
    {
       Intent intent = new Intent(this, DiveViewer.class);
@@ -470,6 +511,10 @@ public class FormationBrowser extends Activity
       startActivityForResult(intent, 0);
    }
 
+   /**
+    * Reads a formation image, scales it to exactly fit the destination
+    * pager view size, and inserts it into the corresponding view.
+    */
    void setFormationImageView(ImageView imageView, int position)
    {
       try
@@ -483,6 +528,11 @@ public class FormationBrowser extends Activity
       }
    }
 
+   /**
+    * Provides an adapter to allow horizontal scrolling of the formation
+    * images in the larger view (i.e. not the thumbnail gallery view).
+    * Images are scaled in the app to correctly fit the pager views.
+    */
    public class FormationViewAdapter extends PagerAdapter
    {
       private Context mContext;
@@ -504,6 +554,10 @@ public class FormationBrowser extends Activity
          return view == ((ImageView) object);
       }
 
+      /**
+       * Populates a single view within the pager with the requested
+       * image from the formation pool.
+       */
       @Override
       public Object instantiateItem(ViewGroup container, int position)
       {
@@ -532,6 +586,11 @@ public class FormationBrowser extends Activity
       }
    }
 
+   /**
+    * Provides an adapter to allow horizontal scrolling of the formation
+    * thumbnails in the smaller "gallery" view. Images are pre-scaled and
+    * delivered with the app.
+    */
    public class FormationGalleryAdapter extends BaseAdapter
    {
       int mGalleryItemBackground;
@@ -560,6 +619,10 @@ public class FormationBrowser extends Activity
          return position;
       }
 
+      /**
+       * Populates a single view within the thumbnail gallery with the
+       * requested thumbnail image from the formation pool.
+       */
       public View getView(int position, View convertView, ViewGroup parent)
       {
          ImageView imageView;
