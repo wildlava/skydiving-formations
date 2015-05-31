@@ -2,24 +2,24 @@
 
 cd ../images
 
-cp skydivingformations_512x512.png skydivingformations_114x114.png
-mogrify -resize 114x114 +gamma 0.0 skydivingformations_114x114.png
-cp skydivingformations_512x512.png skydivingformations_96x96.png
-mogrify -resize 96x96 +gamma 0.0 skydivingformations_96x96.png
-cp skydivingformations_512x512.png skydivingformations_72x72.png
-mogrify -resize 72x72 +gamma 0.0 skydivingformations_72x72.png
-cp skydivingformations_512x512.png skydivingformations_48x48.png
-mogrify -resize 48x48 +gamma 0.0 skydivingformations_48x48.png
-cp skydivingformations_512x512.png skydivingformations_36x36.png
-mogrify -resize 36x36 +gamma 0.0 skydivingformations_36x36.png
+cp skydivingformations_icon_512x512.png skydivingformations_icon_114x114.png
+mogrify -resize 114x114 +gamma 0.0 skydivingformations_icon_114x114.png
+cp skydivingformations_icon_512x512.png skydivingformations_icon_96x96.png
+mogrify -resize 96x96 +gamma 0.0 skydivingformations_icon_96x96.png
+cp skydivingformations_icon_512x512.png skydivingformations_icon_72x72.png
+mogrify -resize 72x72 +gamma 0.0 skydivingformations_icon_72x72.png
+cp skydivingformations_icon_512x512.png skydivingformations_icon_48x48.png
+mogrify -resize 48x48 +gamma 0.0 skydivingformations_icon_48x48.png
+cp skydivingformations_icon_512x512.png skydivingformations_icon_36x36.png
+mogrify -resize 36x36 +gamma 0.0 skydivingformations_icon_36x36.png
 
-cp skydivingformationslite_512x512.png skydivingformationslite_114x114.png
-mogrify -resize 114x114 +gamma 0.0 skydivingformationslite_114x114.png
-cp skydivingformationslite_512x512.png skydivingformationslite_96x96.png
-mogrify -resize 96x96 +gamma 0.0 skydivingformationslite_96x96.png
-cp skydivingformationslite_512x512.png skydivingformationslite_72x72.png
-mogrify -resize 72x72 +gamma 0.0 skydivingformationslite_72x72.png
-cp skydivingformationslite_512x512.png skydivingformationslite_48x48.png
-mogrify -resize 48x48 +gamma 0.0 skydivingformationslite_48x48.png
-cp skydivingformationslite_512x512.png skydivingformationslite_36x36.png
-mogrify -resize 36x36 +gamma 0.0 skydivingformationslite_36x36.png
+cp skydivingformationslite_icon_512x512.png skydivingformationslite_icon_114x114.png
+mogrify -resize 114x114 +gamma 0.0 skydivingformationslite_icon_114x114.png
+cp skydivingformationslite_icon_512x512.png skydivingformationslite_icon_96x96.png
+mogrify -resize 96x96 +gamma 0.0 skydivingformationslite_icon_96x96.png
+cp skydivingformationslite_icon_512x512.png skydivingformationslite_icon_72x72.png
+mogrify -resize 72x72 +gamma 0.0 skydivingformationslite_icon_72x72.png
+cp skydivingformationslite_icon_512x512.png skydivingformationslite_icon_48x48.png
+mogrify -resize 48x48 +gamma 0.0 skydivingformationslite_icon_48x48.png
+cp skydivingformationslite_icon_512x512.png skydivingformationslite_icon_36x36.png
+mogrify -resize 36x36 +gamma 0.0 skydivingformationslite_icon_36x36.png
