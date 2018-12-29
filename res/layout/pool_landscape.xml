@@ -55,14 +55,24 @@
         android:orientation="vertical"
         android:gravity="center"
         >
-      
-      <Spinner
-          android:id="@+id/formation_size_spinner"
+
+      <RelativeLayout
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:prompt="@string/formation_size_prompt"
-          />
-      
+          android:padding="5dp"
+          android:layout_marginBottom="30dp"
+          android:background="#eeeeee"
+          >
+
+          <Spinner
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/formation_size_spinner"
+              android:prompt="@string/formation_size_prompt"
+              />
+
+      </RelativeLayout>
+
       <Button
           android:id="@+id/clear_dive_button"
           android:layout_width="wrap_content"
