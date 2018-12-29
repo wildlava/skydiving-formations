@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
@@ -15,29 +15,29 @@
       />
 
   <LinearLayout
-      xmlns:android="http://schemas.android.com/apk/res/android" 
+      xmlns:android="http://schemas.android.com/apk/res/android"
       android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:gravity="right"
       android:orientation="horizontal"
       android:layout_weight="1"
       >
-    
+
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android" 
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
         android:orientation="vertical"
         android:layout_weight="1"
         >
-      
+
       <android.support.v4.view.ViewPager
           android:id="@+id/formation_view"
           android:layout_width="fill_parent"
           android:layout_height="wrap_content"
           android:layout_weight="1"
           />
-      
+
       <TextView
           android:id="@+id/formation_name_view"
           android:gravity="center"
@@ -48,7 +48,7 @@
           />
 
     </LinearLayout>
-    
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
@@ -71,7 +71,7 @@
           android:onClick="clearDive"
           android:enabled="false"
           />
-      
+
       <Button
           android:id="@+id/add_point_button"
           android:layout_width="wrap_content"
@@ -79,16 +79,16 @@
           android:text="@string/add_point"
           android:onClick="addPoint"
           />
-      
+
     </LinearLayout>
-    
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
         android:orientation="vertical"
         android:gravity="bottom"
         >
-      
+
       <Button
           android:id="@+id/dive_view_button"
           android:layout_width="wrap_content"
@@ -96,7 +96,7 @@
           android:text="@string/dive_view"
           android:onClick="diveView"
           />
-      
+
       <TextView
           android:id="@+id/dive_num_points_view"
           android:textColor="#e002b5"

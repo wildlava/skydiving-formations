@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
@@ -52,7 +52,7 @@
         android:onClick="clearDive"
         android:enabled="false"
         />
-    
+
     <Button
         android:id="@+id/add_point_button"
         android:layout_width="wrap_content"
@@ -69,7 +69,7 @@
     android:orientation="horizontal"
     android:gravity="center"
     >
-    
+
     <Button
         android:id="@+id/dive_view_button"
         android:layout_width="wrap_content"
