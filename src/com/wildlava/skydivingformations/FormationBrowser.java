@@ -277,7 +277,7 @@ public class FormationBrowser extends Activity
          {
             AlertDialog.Builder dialog = new AlertDialog.Builder(this);
             dialog.setNeutralButton("OK", null);
-            dialog.setMessage("This is the \"Lite\" version of the app.  Except for 9-ways, this \"Lite\" version contains only 5 formations in each size.  The full version of the app includes the complete set of formations (over 1000 in total).").create().show();
+            dialog.setMessage("This is the \"Lite\" version of the app. Except for 9-ways, this \"Lite\" version contains only 5 formations in each size. The full version of the app includes the complete set of formations (over 1000 in total).").create().show();
          }
 
          showSplash = false;
